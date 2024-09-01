@@ -1,0 +1,54 @@
+
+Technical Design Document for Assignment 1B
+
+---
+
+Name: Thomas Burk  
+Date Created: 09/01/2024
+
+---
+
+Program Description: 
+Magic 8 Ball: A program that answers the user's yes or no question with a random answer from a list of responses.
+
+---
+
+Logical Steps:  
+1. Step 1: Create a text file that contains a list of responses.
+2. Step 2: Open the text file and read the contents.
+3. Step 3: Ask user to enter a yes or no question, and respond with a random response.
+4. Step 4: Ask user if they want to ask another question, repeat Step 3 if yes, end program if no.
+
+---
+
+Variables:  
+1. responses: Reads text file of responses.
+2. responselist: Creates list of responses from responses variable
+3. answer: Randomly selected response from responselist
+4. again: Contains user input "yes" or "no"
+
+---
+
+Functions:
+1. Function Name: create_responses 
+   Description: Creates text file of responses.
+   Parameters: 
+   Returns: Opens new text file named "8ball_responses.txt", writes all responses, and closes the file.
+
+2. Function Name: read_responses 
+   Description: Reads responses from the text file.
+   Parameters: 
+   Returns: Opens "8ball_responses.txt", reads the responses in the file, and closes the file.
+
+3. Function Name: eight_ball
+   Description: Asks user to ask a question, provides random response, asks user if they want to ask another question,
+	if not, the program ends.
+   Parameters: 
+   Returns: Retrieves responses, asks the user to enter a yes or no question, chooses random response, then asks user
+	if they want to ask another question. If user enters yes, the eight_ball repeats. If user enters no, print
+	'Goodbye' and the program ends.
+
+---
+
+Link to repository: 
+https://github.com/burkt-970mp/COP2373/blob/9e5fef1a2e275918d4036f1881cbf1ab4e2692b2/ThomasBurk_Chapter1_1B.py
