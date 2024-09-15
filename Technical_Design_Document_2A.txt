@@ -1,0 +1,56 @@
+
+Technical Design Document For Assignment 2A
+
+---
+
+Name: Thomas Burk
+Date Created: 09/14/2024
+
+---
+
+Program Description: 
+Spam Email Detector: A program that scans an email message for spam words commonly found in
+	spam emails. The program counts every instance of a word match and adds each detected
+	word into a list. Then it displays the final score, the words detected in the email,
+	and the likelihood of the email being spam based on the final score.
+---
+
+Logical Steps:  
+1. Create list of 30 commonly used spam words
+2. Ask user to enter email text for the program to scan for spam words
+3. Find every instance of a spam word in the email; for every instance, add 1 to the score,
+	and add that word into a list
+4. Display the final score, the words that were found in the email, and the likelihood of the
+	email being spam based on the final score.
+
+---
+
+Variables:  
+1. email: User input email text
+2. words_detected: List of every word from email that matches a word in naughty_words list
+3. score: Number of instances of a spam word match
+4. naughty_words: List of 30 words commonly used in spam emails
+
+---
+
+Functions:
+1. Function Name: detect_spam  
+   Description: Function that scans all words in user-provided email for spam words
+   Parameters: 
+	email: User input email text for detection of spam words 
+   Returns: Returns how many times a spam word was detected, and the number of times
+	a spam word was found (score)
+
+2. Function Name: results 
+   Description: Function that displays results of spam detection and gives feedback
+	messages based on the score and detected spam words
+   Parameters:
+	score: number of instances of a spam word in email
+	words_detected: every word in email that matches a word in naughty_words list
+   Returns: Prints score, every word in email that matches a spam word in the list,
+	and the likelihood of the email being spam based on the score.
+
+---
+
+Link to repository: https://github.com/burkt-970mp/COP2373
+
