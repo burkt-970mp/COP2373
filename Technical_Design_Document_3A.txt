@@ -1,0 +1,72 @@
+
+Technical Design Document for Assignment 3A
+
+---
+
+Name: Thomas Burk  
+Date Created: 09/21/2024
+
+---
+
+Program Description: 
+Monthly Expenses: 
+	A program that asks the user to enter their monthly expenses (both type and
+how much). Then after the user enters all of them, the program analyzes and displays 
+the total cost of all of the expenses, the most costly expense, and the lease costly 
+expense.
+---
+
+Logical Steps:  
+1. Ask user to enter expense type and cost of that expense, and append their entry
+	into the list. Repeat until user has entered all of their expenses.
+2. Analyze the expenses list and calculate the total cost of the expenses
+3. Calculate the most costly expense
+4. Calculate the least costly expense
+5. Display results.
+---
+
+Variables:  
+1. exp_list: List containing user-inputted expenses
+2. exp_type: User input expense type
+3. exp_cost: User input expense cost
+4. end: loops enter_exp function. If user enters "yes" or "y", then run analyze_exp function
+5. exp_sum: calculates total cost of expenses in exp_list
+6. highest: calculates highest expense
+7. lowest: calculates lowest expense
+
+---
+
+Functions:
+1. Function Name: enter_exp 
+   Description: Function that asks the user to enter the type and amount of each expense and 
+	adds them into thelist. 
+   Parameters: 
+   Returns: Appends user-inputted expense types and costs to exp_list, loops until user enters
+	"yes" or "y", at which analyze_exp is run.
+
+2. Function Name: analyze_exp
+   Description: [Brief description of what the function does]  
+   Parameters: exp_list: list containing all entered expenses
+   Returns: Runs total_exp, high_exp, and low_exp using exp_list.
+
+3. Function Name: total_exp
+   Description: Calculates total cost of expenses in exp_list
+   Parameters: exp_list: list containing all entered expenses
+   Returns: Prints total cost of expenses
+4. Function Name: high_exp
+   Description: Calculates the most costly expense in exp_list
+   Parameters: exp_list: list containing all entered expenses
+   Returns: Prints most costly expense and how much it costs
+5. Function Name: low_exp
+   Description: Calculates the least costly expense in exp_list
+   Parameters: exp_list: list containing all entered expenses
+   Returns: Prints least costly expense and how much it costs
+6. Function Name: main
+   Description: Runs enter_exp
+   Parameters:
+   Returns: Runs enter_exp
+
+---
+
+Link to repository: https://github.com/burkt-970mp/COP2373
+
