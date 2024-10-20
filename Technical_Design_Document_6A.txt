@@ -1,0 +1,48 @@
+
+Technical Design Document for Assignment 6A
+
+---
+
+Name: Thomas Burk
+Date Created: 10/20/2024
+
+---
+
+Program Description: 
+Phone Number, Social Security, and Zip Code Format Verifier: Create a program utilizing regular expressions to verify
+	if the user entered a phone number, SSN, or a zip code with correct formatting.
+---
+
+Logical Steps:  
+1. Define the patterns for a phone number, SSN, and zip code using regular expressions
+2. Ask user to input a phone number, SSN, or zip code
+3. Match user input to one of the three types and display result.
+4. Ask user if they would like to enter another.
+
+---
+
+Variables:  
+1. phone_pat: Regular expression pattern for phone number format
+2. ssn_pat: Regular expression pattern for social security number format
+3. zip_pat: Regular expression pattern for zip code format
+4. s: user input to be matched to the three patterns
+5. again: repeat or end program
+
+---
+
+Functions:
+1. Function Name: main  
+   Description: defines the three regular expression patterns, asks for user input, runs format_check, and asks
+	user if they want to enter another input or not.
+   Parameters: none  
+   Returns: Executes format_check and asks if they want to enter another input or not. 
+
+2. Function Name: format_check 
+   Description: if/else using re.match to match user input to the three patterns for phone number, SSN, and zip code, 
+	and prints message stating whether the input is one of the three or not formatted correctly.  
+   Parameters: phone_pat, ssn_pat, zip_pat, s  
+   Returns: Prints the user input and whether it is a phone number, SSN, or zip code, or not formatted correctly.
+
+---
+
+Link to repository: https://github.com/burkt-970mp/COP2373
