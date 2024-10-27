@@ -1,0 +1,19 @@
+Technical Design Document Read CSV Assignment
+Name: Thomas Burk  
+Date Created: 10/27/2024
+
+Program Description: 
+Read CSV File: Create a separate program to read the grades.csv file and display the data in tabular format.
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: main  
+     Description: Opens grades.csv file, and prints the contents of each row with formatted spaces
+     Parameters: N/A
+     Variables: csv_reader: allows access to CSV data using indexes
+     Logical Steps: open file, print contents of the file. 
+     Returns: [Describe what the function returns]
+
+Logical Steps:
+main 
+
+Link to your repository: https://github.com/burkt-970mp/COP2373
