@@ -1,0 +1,31 @@
+Technical Design Document 7a Assignment
+Name: Thomas Burk  
+Date Created: 10/27/2024
+
+Program Description: 
+Sentence Counter Program: Create a program using regular expressions that asks a user to enter sentences, counts
+how many sentences have been entered, and displays the sentences.
+
+Functions used in the Program:
+1. Function Name: main
+     Description: Defines sentence pattern, asks user to enter sentences, then runs sent_check 
+     Parameters: N/A
+     Variables: 
+	sent_pat: regex pattern for sentences
+	s: user input for sentences
+     Logical Steps: Define sent_pat, ask user to enter sentences, then run sent_check
+     Returns: N/A
+
+2. Function Name: sent_check  
+     Description: re.findall to find all sentences, then prints all the sentences and the number of sentences
+     Parameters: sent_pat, s
+     Variables: 
+	checked_sent: match s to sent_pat using re.findall
+     Logical Steps: find all sentences in user input, print the sentences and number of sentences 
+     Returns: Prints the sentences and the number of sentences.
+
+Logical Steps:
+main
+sent_check
+
+Link to your repository: https://github.com/burkt-970mp/COP2373
