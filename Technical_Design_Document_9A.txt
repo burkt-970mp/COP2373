@@ -1,0 +1,79 @@
+Technical Design Document for Assignment 9A
+Name: Thomas Burk  
+Date Created: 11/3/2024
+
+Program Description: 
+Bank Account Class: Create a BankAcct Class that contains at least the following state information: name, account number, amount
+	and interest rate. In addition to an __init__ method, the class should support methods for adjusting the interest
+	rate, for withdrawing and depositing, and for giving a balance. You should also include a method to calculate the interest
+	based on the number of days. Use the __str__ method to display balances and interest amounts. Create a test function to
+	test the different methods in the BankAcct Class.
+
+Functions used in the Program (list in order as they are called):
+
+1. Function Name: __init__ 
+     Description: creates a class with state information: name, account number, amount and interest rate
+     Parameters:
+	name: Name attached to account
+	acct_number: Account number
+	amount: Account balance
+	int_rate: Interest rate
+     Variables:
+	self.name
+	self.acct_number
+	self.amount
+	self.int_rate
+     Logical Steps: Set parameters equal to their respective variables 
+     Returns: N/A
+
+2. Function Name: curr_bal
+     Description: Method to retrieve current account balance
+     Parameters: self
+     Variables: N/A
+     Logical Steps: return current account balance 
+     Returns: current account balance
+
+3. Function Name: deposit
+     Description: Method to add to account balance
+     Parameters: self, amount
+     Variables: N/A
+     Logical Steps: add to current account balance
+     Returns: new account balance
+
+4. Function Name: withdraw
+     Description: Method to subtract account balance if there is enough money in account
+     Parameters: self, amount
+     Variables: N/A
+     Logical Steps: If the current balance is greater than amount set to withdraw, subtract that amount from balance. Else, print 
+	error message and leave balance alone.
+     Returns: new account balance
+
+6. Function Name: int_rate_adjust
+     Description: Method to adjust the interest rate
+     Parameters: self, curr_rate: new interest rate
+     Variables: N/A
+     Logical Steps: Set interest rate to new interest rate
+     Returns: updated interest rate
+ 
+7. Function Name: int_calc
+     Description: Method to calculate interest earned over number of days
+     Parameters: self, days: number of days
+     Variables: earned_int: earned interest calculated
+     Logical Steps: divide interest rate by 365, then multiply that by the account balance and days.
+     Returns: earned interest
+
+8. Function Name: test_BankAcct_class
+     Description: Tests the BankAcct class using example information, and test all of its defined methods.
+     Parameters: N/A
+     Variables: test_acct: example bank account information for BankAcct
+     Logical Steps:
+	1. Print out example bank account information
+	2. Withdraw money from account and display current balance
+	3. Deposit money into account  and display current balance
+	4. Attempt to withdraw more money than there is in the account and display current balance
+	5. Update interest rate
+	6. Calculate earned interest using updated interest rate
+	7. Print out current bank account information.
+     Returns: N/A
+
+Link to your repository: https://github.com/burkt-970mp/COP2373
