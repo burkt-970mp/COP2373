@@ -1,0 +1,100 @@
+Technical Design Document for 12A
+Name: Thomas Burk  
+Date Created: 11/24/2024
+
+Program Description: 
+Open CSV of exam grades into numpy array. Find the mean, median, standard deviation, minimum, and maximum for each exam, then
+	find the same for all exams combined, next find the number of students who passed each exam with a 60 or more, then
+	find the pass percentage for all exams combined.
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: main
+     Description: Open CSV in numpy array, then run exam1, exam2, exam3, all_exams, and ex_pass 
+     Parameters: N/A 
+     Variables: g - numpy array containing CSV data
+     Logical Steps: 
+	1. Read npgrades.csv into numpy array 'g' with data type of floating point
+	2. Print first three rows of 'g'
+	3. Run exam1, exam2, exam3, all_exams, and ex_pass
+     Returns: The results from numpy array data analysis
+
+2. Function Name: exam1  
+     Description: Data analysis of first column of 'g' (Exam 1 grades)
+     Parameters: g -  numpy array containing CSV data 
+     Variables:
+	ex1_mean - Calculates the mean of first column
+	ex1_med - Calculates the median of the first column
+	ex1_std - Calculates the standard deviation of the first column
+	ex1_min - Finds the minimun score of the first column
+	ex1_max - Finds the maximum score of the first column
+     Logical Steps:  
+	1. Find the mean, median, standard deviation, minimum, and maximum for first column
+	2. Print results
+     Returns: Results of data analysis of the first exam (first column)
+
+3. Function Name: exam2
+     Description: Data analysis of second column of 'g' (Exam 2 grades)
+     Parameters: g -  numpy array containing CSV data 
+     Variables:
+	ex2_mean - Calculates the mean of second column
+	ex2_med - Calculates the median of the second column
+	ex2_std - Calculates the standard deviation of the second column
+	ex2_min - Finds the minimun score of the second column
+	ex2_max - Finds the maximum score of the second column
+     Logical Steps:  
+	1. Find the mean, median, standard deviation, minimum, and maximum for second column
+	2. Print results
+     Returns: Results of data analysis of the second exam (second column)
+
+4. Function Name: exam3
+     Description: Data analysis of second column of 'g' (Exam 3 grades)
+     Parameters: g -  numpy array containing CSV data 
+     Variables:
+	ex3_mean - Calculates the mean of third column
+	ex3_med - Calculates the median of the third column
+	ex3_std - Calculates the standard deviation of the third column
+	ex3_min - Finds the minimun score of the third column
+	ex3_max - Finds the maximum score of the third column
+     Logical Steps:  
+	1. Find the mean, median, standard deviation, minimum, and maximum for third column
+	2. Print results
+     Returns: Results of data analysis of the third exam (third column)
+
+5. Function Name: all_exams
+     Description: Data analysis of entire 'g' array (All exam grades)
+     Parameters: g -  numpy array containing CSV data 
+     Variables:
+	all_mean - Calculates the mean of entire array
+	all_med - Calculates the median of the entire array
+	all_std - Calculates the standard deviation of the entire array
+	all_min - Finds the minimun score of the entire array
+	all_max - Finds the maximum score of the entire array
+     Logical Steps:  
+	1. Find the mean, median, standard deviation, minimum, and maximum for entire array
+	2. Print results
+     Returns: Results of data analysis of all exams (entire array)
+
+6. Function Name: ex_pass
+
+     Description: Analysis entire array for passing scores of 60 percent or greater, add them up
+	for each exam, then get the overall passing percentage for all exams
+     Parameters: g -  numpy array containing CSV data 
+     Variables:
+	ex1_pass: Array of boolean integers for each element in column 1 that are 60 or greater
+	ex1_pass_sum: Total number of passing scores in column 1
+	ex2_pass: Array of boolean integers for each element in column 2 that are 60 or greater
+	ex2_pass_sum: Total number of passing scores in column 2
+	ex3_pass: Array of boolean integers for each element in column 3 that are 60 or greater
+	ex3_pass_sum: Total number of passing scores in column 3
+	all_pass: Array of boolean integers for each element for entire array that are 60 or greater
+	all_pass_sum: Total number of passing scores for entire array
+	
+     Logical Steps:  
+	1. Find number of passing scores for each exam and all exams combined.
+	2. Print results
+     Returns: Number of passing scores of each exam and all exams combined
+
+Logical Steps:
+List the order in which your functions are called. 
+
+Link to your repository: https://github.com/burkt-970mp/COP2373
